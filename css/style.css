@@ -11,9 +11,6 @@ body {
 }
 
 .main-container {
-  height: 100vh;
-  width: 100vw;
-  background-color: aquamarine;
 }
 
 .header {
@@ -21,31 +18,33 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 10;
 }
 
 .main-window {
   width: 80%;
+  height: 90vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 5px;
   flex-wrap: wrap;
+  overflow: auto;
 }
 
 main {
-  margin-top: 115px;
+  margin-top: 100px;
 }
 
 .window-user {
-  width: calc((100% / 7) - 7px);
+  /* width: calc((100% / 7) - 7px); */
   position: relative;
   background-image: url(https://picsum.photos/200/300);
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
-  width: 283px;
+  width: 300px;
 }
 
 .nomeUser {
@@ -58,10 +57,12 @@ main {
   color: white;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
+footer {
+  height: 10vh;
+  background-color: purple;
+  position: absolute;
   left: 0;
+  z-index: 2;
   width: 100%;
 }
 
@@ -72,14 +73,9 @@ main {
 }
 
 .debug .footer {
-  height: 100px;
   background-color: rgb(112, 2, 255);
 }
 
 .debug .main-window {
-  height: 700px;
   background-color: lightseagreen;
-}
-
-.debug .window-user {
 }
