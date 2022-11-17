@@ -40,6 +40,19 @@ main {
 
 .window-user {
   width: calc((100% / 7) - 7px);
+  position: relative;
+  background-image: url(https://picsum.photos/200/300);
+  background-repeat: no-repeat;
+}
+
+.nomeUser {
+  padding: 9px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
 }
 
 .footer {
@@ -67,5 +80,4 @@ main {
 
 .debug .window-user {
   height: 200px;
-  background-color: orangered;
 }
