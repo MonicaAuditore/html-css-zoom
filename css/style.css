@@ -8,6 +8,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #0c0c0c;
 }
 
 .main-container {
@@ -19,6 +20,31 @@ body {
   left: 0;
   width: 100%;
   z-index: 10;
+  background-color: #0c0c0c;
+}
+
+.contenitore-pulsanti {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-1,
+.btn-2 {
+  color: white;
+  background-color: #424242;
+  padding: 7px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn-1 {
+  margin-right: 10px;
+}
+
+i {
+  color: white;
 }
 
 .main-window {
@@ -26,7 +52,7 @@ body {
   height: 80vh;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 5px;
   flex-wrap: wrap;
   overflow: auto;
@@ -57,7 +83,7 @@ main {
 
 footer {
   height: 10vh;
-  background-color: purple;
+  background-color: #222222;
   position: absolute;
   left: 0;
   z-index: 2;
@@ -67,13 +93,13 @@ footer {
 /* DEBUG */
 .debug .header {
   height: 100px;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
-.debug .footer {
+/* .debug .footer {
   background-color: rgb(112, 2, 255);
-}
+} */
 
-.debug .main-window {
+/* .debug .main-window {
   background-color: lightseagreen;
-}
+} */
