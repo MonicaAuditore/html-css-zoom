@@ -97,15 +97,18 @@ footer {
   border-bottom: 12px solid #1c1c1c;
 }
 
-.simboli-sinistra {
+.simboli-sinistra,
+.simboli-centrali {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 
-.simboli-sinistra p {
+.simboli-sinistra,
+.simboli-centrali p {
   color: #fff;
+  font-size: 14px;
 }
 
 .microfono i {
@@ -113,14 +116,44 @@ footer {
   font-size: 27px;
 }
 
-.video i {
+.icon i {
   padding-bottom: 10px;
   font-size: 27px;
 }
 
-.simboli-destra a {
+.freccia i {
+  font-size: 10px;
+}
+
+.icon,
+.microfono {
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+.icon i {
+  padding-bottom: 10px;
+  font-size: 27px;
+}
+
+.color-green i {
+  color: #4be519;
+}
+
+.simboli-destra {
   background-color: #424242;
+  height: 100%;
+  line-height: 80px;
+}
+
+.simboli-destra a {
   padding: 10px;
+  color: red;
+  text-decoration: none;
+}
+
+.simboli-destra a {
+  font-size: 14px;
 }
 
 /* DEBUG */
